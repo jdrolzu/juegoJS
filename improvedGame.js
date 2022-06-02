@@ -125,21 +125,21 @@ function startGame2() {
                 else {
                     console.log("%c\n¡Encontraste la llave!\n","color: green; border-radius: 10px; border: solid 2px gray");
                     console.log("%c¡Jugador(a) 2 has ganado!\n","color: green; border-radius: 10px; border: solid 2px gray");
-                    endGame();
+                    newGame();
                 }
             }
         }
         else {
             console.log("%c\n¡Encontraste la llave!\n","color: green; border-radius: 10px; border: solid 2px gray");
             console.log("%c¡Jugador(a) 1 has ganado!\n","color: green; border-radius: 10px; border: solid 2px gray");
-            endGame();
+            newGame();
         }
     }
     console.log("%c¡Ninguno de l@s jugadores(as) pudo salir a tiempo!","color: red; border-radius: 10px; border: solid 2px gray");
     endGame();
 }
 
-export function endGame() {
+function endGame() {
     console.log("%c¡Fin del juego!\n","color: orange; border-radius: 10px; border: solid 2px gray");
     Deno.exit(1);
 };
