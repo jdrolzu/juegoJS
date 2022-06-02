@@ -1,8 +1,9 @@
 function gameMenu () {
     while (true) {
-        //ASCII ART
+        console.log("%c\n***** BIENVENIDO AL JUEGO SCAPE-ROOM *****","color: cyan; border-radius: 10px; border: solid 2px gray");
         console.log("%c\nPresiona 1 para un jugador", "color: red; border-radius: 10px; border: solid 2px red");
         console.log("%cPresiona 2 para dos jugadores", "color: yellow; border-radius: 10px; border: solid 2px yellow");
+        
         let numberPlayers = prompt("\nIngresa tu respuesta: ");
         switch (numberPlayers) {
             case "1":
